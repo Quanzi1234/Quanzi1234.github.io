@@ -1,0 +1,56 @@
+body {
+    background-color: #353535;
+    color:whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 30px;
+  }
+  
+
+  
+h2, h3 {
+
+    display: inline;
+}
+
+.tab{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+#quiz {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px chartreuse;
+}
+
+
+#question {
+    margin-bottom: 20px;
+  }
+  
+  #options {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: #131313;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8f8d8d;
+  }
