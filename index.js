@@ -70,3 +70,28 @@ resetButton.addEventListener("click", resetQuiz);
 
 showQuestion();
 
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('.menu');
+const mainContent = document.querySelector('.main')
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('visible');
+    menuToggle.innerText = menu.classList.contains('visible') ? 'Hide Menu' : 'Show Menu';
+    
+    mainContent.style.marginLeft = menu.classList.contains('visible') ? '168px' : '0';
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        menu.classList.remove('visible');
+        mainContent.style.marginLeft = '168px';
+    } else if (window.innerWidth < 768) {
+        if (mainContent.style.marginLeft == '168px') {
+            mainContent.style.marginLeft = menu.classList.contains('visible') ? '168px' : '0';
+        }
+    } else if (menuToggle.innerText == 'Hide Menu') {
+        menuToggle.innerText = menu.classList.contains('visible') ? 'Hide Menu' : 'Show Menu';
+    }
+});
+
+

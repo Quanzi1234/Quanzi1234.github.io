@@ -4,6 +4,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h2 {
     font-size: 30px;
   }
@@ -15,10 +19,97 @@ h2, h3 {
     display: inline;
 }
 
-.tab{
+.tab {
     display: inline-block;
     margin-left: 40px;
 }
+
+.menuButton {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0 #7a7a7a;
+  height: 40px;
+  left: 0;
+  padding: 10px;
+}
+
+.top-bar {
+  display: none;
+  height: 40px;
+  position: sticky;
+  left: 0;
+  padding: 0;
+  top: 10px;
+  width: 100%;
+  background-color: #353535; /* Adjust color as needed */
+  box-shadow: 0 0px 1px #FFFFFF; /* Add a slight shadow for effect */
+  z-index: 1000; /* Ensure it’s on top */
+}
+
+#menu-toggle {
+  display: none; /* Initially hidden */
+  position: sticky;
+  float: left;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Keep it on top */
+}
+
+.main-changes {
+  margin-left: 168px;
+}
+
+.menu {
+  position: sticky;
+  top: 0;  
+  width: 168px;
+  float: left;
+  background-color: #353535;
+  z-index: 999;
+}
+.main {
+  margin-left: 168px;
+  margin-right: 168px;
+  max-width: 90%;
+  width: auto;
+}
+
+
+
+@media (max-width: 768px){
+  #menu-toggle {
+    display: block;
+  }
+
+  .top-bar{
+    display: block;
+  }
+
+  .menu {
+      display: none;
+      width: 168px;
+      height: 100%;
+      float: left;
+      margin-left: 0;
+      margin-top: 50px;
+      box-shadow: 0 0px 1px #FFFFFF; /* Add a slight shadow for effect */
+    }
+
+    .main {
+      margin-right: 0;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .menu.visible {
+      display: block; /* Show menu when the button is clicked */
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+}
+
+
 
 
 #quiz {
@@ -53,4 +144,5 @@ h2, h3 {
   
   button:hover {
     background-color: #8f8d8d;
+    border-radius: 0;
   }
