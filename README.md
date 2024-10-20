@@ -1,25 +1,48 @@
 # web-sovellus
 
-## HTML Assignments
-1. Basic Personal Webpage
+## HTML (25%)
 
-    Description: Create a simple personal webpage that includes your name, a brief biography, and a list of your hobbies. Use heading, paragraph, and list elements.
-    Objectives:
-        Understand basic HTML structure.
-        Use basic HTML tags like &lt;h1&gt;, &lt;p&gt; and &lt;ul&gt;
+    1/5:
 
-## JavaScript Assignments
-1. Interactive Quiz
+    Basic HTML structure is present.
 
-    Description: Create a simple quiz with multiple-choice questions. Display a score at the end.
-    Objectives:
-        Understand basic JavaScript interactions.
-        Use event listeners on buttons.
 
-## CSS Assignments
-1. Stylize Personal Webpage
+    2/5:
 
-    Description: Take the personal webpage from the first HTML assignment and apply basic styling like changing fonts, colors, and backgrounds.
-    Objectives:
-        Understand inline and external styles.
-        Use basic CSS properties.
+    HTML structure with clear content differentiation (headings, paragraphs, lists).
+
+
+## CSS (25%)
+
+    1/5:
+
+    Basic CSS styling (colors, fonts).
+
+    
+    2/5:
+
+    Use of classes and IDs to style specific elements.
+
+
+
+
+## JavaScript Basics (25%)
+
+    1/5:
+
+    Simple interactions (like alerts on button click).
+
+
+    
+    2/5:
+
+    Multiple event listeners and basic DOM manipulations.
+
+## Asynchronous Operations (25%)
+
+    1/5:
+
+    Use of timers.
+    Learn about Timers
+
+
