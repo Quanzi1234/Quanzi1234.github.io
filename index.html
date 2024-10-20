@@ -29,6 +29,9 @@
     <div class="main">
         <h1>HTML/CSS/JS assignment</h1>
         <hr>
+
+        <p>Code made with help from course material and <a href="https://www.w3schools.com/" style="color: chartreuse;">w3school</a></p>
+
         <h1>About me:</h1>
 
         <h2>Name:</h2>
@@ -44,24 +47,39 @@
 
         <h3>Current Progress:</h3>
         <dl>
-            <dt>Basic HTML structure:</dt>
-                <dd>Create a webpage that includes:</dd>
-                    <dd><span class="tab"></span>- Your name</dd>
-                    <dd><span class="tab"></span>- A brief Biography</dd>
-                    <dd><span class="tab"></span>- a list of your hobbies</dd>
-                <dd>Use basic HTML tags like &lt;h1&gt;, &lt;p&gt; and &lt;ul&gt;</dd>
-            
+            <dt>HTML:</dt>
+                <dd>1/5</dd>
+                    <dd><span class="tab"></span>- Basic HTML structure is present.</dd>
+                <dd>2/5</dd>
+                    <dd><span class="tab"></span>- HTML structure with clear content differentiation (headings, paragraphs, lists).</dd>
+                <dd>3/5</dd>
+                    <dd><span class="tab"></span>- Use of forms, links, and media.</dd>
+
             <br>
-            <dt>Stylize Personal Webpage:</dt>
-                <dd>Apply Basic styling:</dd>
-                    <dd style="font-family:'Times New Roman', Times, serif"><span class="tab"></span>- Font</dd>
-                    <dd style="color: chartreuse;"><span class="tab"></span>- Colors</dd>
-                    <dd style="color:black"><span class="tab"></span><span style="background-color: aqua;">- Background</span></dd>
-            
+            <dt>CSS:</dt>
+                <dd>1/5</dd>
+                <dd><span class="tab"></span>- Basic CSS styling (colors, fonts).</dd>
+                <dd>2/5</dd>
+                    <dd><span class="tab"></span>- Use of classes and IDs to style specific elements.</dd>
+                <dd>3/5</dd>
+                    <dd><span class="tab"></span>Implementation of responsive design elements.</dd>
             <br>
-            <dt>Interactive Quiz:</dt>
-                <dd>Create a simple quiz with multiple-choice questions</dd>
-                <dd>Display a score at the end</dd>
+            <dt>JavaScript Basics:</dt>
+                <dd>1/5</dd>
+                    <dd><span class="tab"></span>- Simple interactions (like alerts on button click).</dd>
+                <dd>2/5</dd>
+                    <dd><span class="tab"></span>- Multiple event listeners and basic DOM manipulations.</dd>
+                <dd>3/5</dd>
+                    <dd><span class="tab"></span>- Use of arrays, objects, and functions.</dd>
+                <dd>4/5</dd>
+                    <dd><span class="tab"></span>- Advanced logic, looping through data, and dynamic DOM updates.</dd>
+
+            <br>
+            <dt>Asynchronous Operations:</dt>
+                <dd>1/5:</dd>
+                <dd><span class="tab"></span>- Use of timers.</dd>
+            <br>
+            <dt></dt>
 
 
         </dl> 
@@ -82,9 +100,35 @@
         <h3>Timer Function:</h3>
         <p id="demo"></p>
 
-        <br>
 
         <script src="index.js"></script>
+
+        <hr>
+        <h3>Contact Me:</h3>
+
+
+        <form> <!-- Currently not sending form data anywhere. Can be modified with PHP-->
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <br>
+
+            <label for="countries">Country</label>
+            <select id="countries" name="country"></select>
+
+            <br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+            <br>
+            <input type="submit" value="Submit">
+        
+          </form>
     </div>
 
 </body>

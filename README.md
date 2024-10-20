@@ -11,6 +11,13 @@
 
     HTML structure with clear content differentiation (headings, paragraphs, lists).
 
+    
+    3/5:
+
+    Use of forms, links, and media.
+
+
+
 
 ## CSS (25%)
 
@@ -24,6 +31,9 @@
     Use of classes and IDs to style specific elements.
 
 
+    3/5:
+
+    Implementation of responsive design elements.
 
 
 ## JavaScript Basics (25%)
@@ -37,6 +47,19 @@
     2/5:
 
     Multiple event listeners and basic DOM manipulations.
+
+    
+    3/5:
+
+    Use of arrays, objects, and functions.
+
+    
+    4/5:
+
+    Advanced logic, looping through data, and dynamic DOM updates.
+
+
+
 
 ## Asynchronous Operations (25%)
 

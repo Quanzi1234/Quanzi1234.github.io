@@ -56,7 +56,9 @@ function selectAnswer(e){
 
 function showResult() {
     questionElement.innerHTML = "Quiz Completed!";
-    optionsElement.innerHTML = `<p>Your score: ${score}/${quizData.length}</p>`;
+    optionsElement.innerHTML = `<p>Your score: ${score}/${quizData.length}</p><br></br> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe> `;
   }
 
 function resetQuiz(){
@@ -94,4 +96,24 @@ window.addEventListener('resize', () => {
     }
 });
 
+const getCountries = async () => {
+    try {
+        const response = await fetch('countries.txt');
+        const data = await response.text();
+        const countries = data.split('\n');
+        
+        const parent = document.querySelector('#countries');
+        if (countries) {
+            countries.forEach((country) => {
+                const option = document.createElement('option');
+                option.value = country.trim();
+                option.text = country.trim();
+                parent.appendChild(option);
+            });
+        }
+    } catch (error) {
+        console.error('Error fetching countries:', error);
+    }
+};
 
+getCountries();

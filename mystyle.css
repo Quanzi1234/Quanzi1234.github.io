@@ -41,18 +41,18 @@ h2, h3 {
   padding: 0;
   top: 10px;
   width: 100%;
-  background-color: #353535; /* Adjust color as needed */
-  box-shadow: 0 0px 1px #FFFFFF; /* Add a slight shadow for effect */
-  z-index: 1000; /* Ensure it’s on top */
+  background-color: #353535; 
+  box-shadow: 0 0px 1px #FFFFFF; 
+  z-index: 1000; 
 }
 
 #menu-toggle {
-  display: none; /* Initially hidden */
+  display: none; 
   position: sticky;
   float: left;
   top: 10px;
   left: 10px;
-  z-index: 1000; /* Keep it on top */
+  z-index: 1000; 
 }
 
 .main-changes {
@@ -61,7 +61,7 @@ h2, h3 {
 
 .menu {
   position: sticky;
-  top: 0;  
+  top: 5%;  
   width: 168px;
   float: left;
   background-color: #353535;
@@ -92,7 +92,7 @@ h2, h3 {
       float: left;
       margin-left: 0;
       margin-top: 50px;
-      box-shadow: 0 0px 1px #FFFFFF; /* Add a slight shadow for effect */
+      box-shadow: 0 0px 1px #FFFFFF; 
     }
 
     .main {
@@ -102,7 +102,7 @@ h2, h3 {
     }
 
     .menu.visible {
-      display: block; /* Show menu when the button is clicked */
+      display: block; 
       position: fixed;
       top: 0;
       left: 0;
@@ -116,9 +116,9 @@ h2, h3 {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    border: 1px solid chartreuse;
     border-radius: 5px;
-
-    box-shadow: 0 0 10px chartreuse;
+    border-color: chartreuse;
 }
 
 
@@ -146,3 +146,33 @@ h2, h3 {
     background-color: #8f8d8d;
     border-radius: 0;
   }
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+  input[type=submit] {
+    background-color: rgba(128, 255, 0, 0);
+    color: whitesmoke;
+    border: 1px solid chartreuse;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover{
+    background-color: rgba(128, 255, 0, 0.301);
+  }
+
+  .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
